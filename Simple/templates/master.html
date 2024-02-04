@@ -1,14 +1,18 @@
 {% load static %}
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block title %}{% endblock %}</title>
-  <link rel="stylesheet" href="{% static 'first.css' %}">
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
 </head>
 <body>
-
-{% block content %}
-{% endblock %}
-
+  <!-- <h1 class="mx-6">Welcome To UI</h1> -->
+  {% block content %}
+  {% endblock %}
+  
+  <script src="{% static 'main.js' %}"></script>
 </body>
 </html>

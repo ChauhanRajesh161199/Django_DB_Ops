@@ -8,6 +8,16 @@ def members(request):
   template = loader.get_template('first.html')
   return HttpResponse(template.render())
 
+def signin(request):
+   template = loader.get_template('signin.html')
+   context = {}
+   return HttpResponse(template.render(context, request))
+
+def signup(request):
+   template = loader.get_template('signup.html')
+   context = {}
+   return HttpResponse(template.render(context, request))
+
 def main(request):
     template = loader.get_template('main.html')
     return HttpResponse(template.render())
