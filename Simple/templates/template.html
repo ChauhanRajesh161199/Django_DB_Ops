@@ -1,15 +1,18 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html>
-    <link rel="stylesheet" href="{% static 'globle.css' %}">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
 <body>
-
-{% for x in fruits %}
-  <h1>{{ x }}</h1>
-{% endfor %}
-
-<p>In views.py you can see what the fruits variable looks like.</p>
-
+  <h1 class="mx-6">Welcome To UI</h1>
+  {% block content %}
+  {% endblock %}
+  
+  <script src="{% static 'main.js' %}"></script>
 </body>
 </html>
